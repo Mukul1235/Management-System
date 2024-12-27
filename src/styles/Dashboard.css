@@ -1,0 +1,40 @@
+.app-container {
+    display: flex;
+}
+
+.dashboard {
+    width: 250px; /* Set the width of the sidebar */
+    background-color: rgb(112, 108, 108); /* Light grey background */
+    padding: 20px; /* Spacing around the content */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position for sidebar */
+}
+
+.dashboard h2 {
+    text-align: center;
+}
+
+.dashboard nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.dashboard nav ul li {
+    margin: 20px 0; /* Spacing between items */
+}
+
+.dashboard nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    font-size: 18px; /* Font size */
+}
+
+.dashboard nav ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.main-content {
+    margin-left: 260px; /* Add margin to avoid overlap with sidebar */
+    padding: 20px; /* Spacing for the main content */
+    flex-grow: 1; /* Allow this area to grow */
+}

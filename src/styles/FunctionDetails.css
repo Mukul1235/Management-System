@@ -1,0 +1,51 @@
+.functions-details {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.search-bar {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 100%; /* Set width to 100% to fill the container */
+  max-width: 100%; /* Ensure it doesn't exceed the container */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead th {
+  color: #333;
+  padding: 10px;
+  border: 1px solid #777777;
+  text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+  /* background-color: #f9f9f9; */
+}
+
+table tbody td {
+  padding: 10px;
+  border: 1px solid #777777;
+}
