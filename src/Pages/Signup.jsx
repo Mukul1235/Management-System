@@ -66,7 +66,7 @@ const AuthPage = () => {
 
   useEffect(() => {
     if (!isPending && isLoggedIn) {
-      navigate("/dashboard");
+      navigate("/customers");
     }
   }, [isLoggedIn, isPending, navigate]);
 
