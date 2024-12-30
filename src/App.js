@@ -21,10 +21,10 @@ function App() {
                     <Routes>
                         <Route path="/" element={<AuthPage />} />
                         <Route path="/dashboard" element={<Dashboard />} />
-                        <Route path="/customers" element={<Dashboard >
+                        <Route path="/customers" element={<Dashboard ><Customers/>
                      </Dashboard>} />
                         <Route path="/payments/:customerId" element={<Dashboard></Dashboard>} /> {/* Updated route */}
-                        <Route path="/functionDetail" element={<Dashboard></Dashboard>} /> {/* Updated route */}
+                        <Route path="/functionDetail" element={<Dashboard><FunctionsDetails/></Dashboard>} /> {/* Updated route */}
                     </Routes>
                 </div>
             </div>
