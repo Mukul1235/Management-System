@@ -1,40 +1,71 @@
-.app-container {
-    display: flex;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.dashboard {
-    width: 250px; /* Set the width of the sidebar */
-    background-color: rgb(112, 108, 108); /* Light grey background */
-    padding: 20px; /* Spacing around the content */
-    height: 100vh; /* Full height */
-    position: fixed; /* Fixed position for sidebar */
+.app-provider {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.dashboard h2 {
-    text-align: center;
+.branding {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #1976d2;
+  color: white;
 }
 
-.dashboard nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+.branding-logo {
+  height: 32px;
+  margin-right: 16px;
 }
 
-.dashboard nav ul li {
-    margin: 20px 0; /* Spacing between items */
+.branding-title {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.dashboard nav ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Dark text color */
-    font-size: 18px; /* Font size */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
-.dashboard nav ul li a:hover {
-    color: #007bff; /* Change color on hover */
+.navigation-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.main-content {
-    margin-left: 260px; /* Add margin to avoid overlap with sidebar */
-    padding: 20px; /* Spacing for the main content */
-    flex-grow: 1; /* Allow this area to grow */
+.navigation-item:hover {
+  background-color: #f0f0f0;
+}
+
+.navigation-icon {
+  margin-right: 8px;
+}
+
+.dashboard-layout {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.dashboard-content {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
 }
