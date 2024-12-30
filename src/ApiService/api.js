@@ -1,13 +1,15 @@
 import axios from "axios";
 import { data } from "react-router-dom";
 
-const API = axios.create({ baseURL: "http://127.0.0.1:8000/api/" });
+const API = axios.create({
+  baseURL: "https://managementsystemapi.onrender.com/api/",
+});
 
 export const createCustomer = (data) => API.post("/customers/", data);
 // export const createPayment = (data) => API.post("/payments/", data);
 export const fetchCustomers = async () => {
-    try {
-        const response = await API.get(`/customers/`);
+  try {
+    const response = await API.get(`/customers/`);
     return response.data;
   } catch (error) {
     console.error("Error fetching customers:", error);

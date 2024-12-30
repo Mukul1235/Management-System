@@ -1,7 +1,9 @@
 import axios from "axios";
 import { data } from "react-router-dom";
 
-const API = axios.create({ baseURL: "http://127.0.0.1:8000/api/" });
+const API = axios.create({
+  baseURL: "https://managementsystemapi.onrender.com/api/",
+});
 
 // export const createUser = async (userInfo) => {
 //   // console.log(userInfo);
@@ -15,7 +17,6 @@ const API = axios.create({ baseURL: "http://127.0.0.1:8000/api/" });
 //     return { error: error.message || error };
 //   }
 // };
-
 
 export const signInUser = async (userInfo) => {
   try {
@@ -39,7 +40,7 @@ export const CheckerAuth = async (token) => {
     return data;
   } catch (error) {
     const { response } = error;
-    console.log(response)
+    console.log(response);
     if (response?.data) return response.data;
 
     return { error: error.message || error };
